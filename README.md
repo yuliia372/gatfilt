@@ -1,12 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Text Typing with Kittens</title>
+    <title>Привітання</title>
     <style>
-        body, html {
-            height: 100%;
+        body {
+              height: 100%;
             margin: 0;
             font-family: Arial, sans-serif;
             display: flex;
@@ -17,108 +16,19 @@
             text-align: center;
             font-size: 24px;
             overflow: hidden;
-        }
-
-        #text {
-            z-index: 1;
-            cursor: pointer;
-            white-space: nowrap;
-            overflow: hidden;
-            border-right: 2px solid white; /* Ефект курсору */
-            animation: blinkCursor 0.75s step-end infinite;
-        }
-
-        .kitten {
-            position: absolute;
-            width: 150px;
-            height: 150px;
-        }
-
-        .kitten svg {
-            fill: black; /* Чіткіший силует чорного кольору */
-            width: 100%;
-            height: 100%;
-        }
-
-        .kitten-1 {
-            animation: move1 10s infinite linear;
-        }
-
-        .kitten-2 {
-            animation: move2 12s infinite linear;
-        }
-
-        .heart {
-            position: absolute;
-            font-size: 50px;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            opacity: 0;
-        }
-
-        @keyframes blinkCursor {
-            from { border-right-color: white; }
-            to { border-right-color: transparent; }
-        }
-
-        @keyframes typing {
-            from { width: 0; }
-            to { width: 100%; }
-        }
-
-        @keyframes move1 {
-            0% { transform: translate(-150px, 0); }
-            50% { transform: translate(100vw, 100vh); }
-            100% { transform: translate(-150px, 0); }
-        }
-
-        @keyframes move2 {
-            0% { transform: translate(100vw, -150px); }
-            50% { transform: translate(-150px, 100vh); }
-            100% { transform: translate(100vw, -150px); }
-        }
-
-        /* Анімація зближення кошенят */
-        @keyframes moveToCenter1 {
-            to { transform: translate(50vw, 50vh) translate(-50%, -50%); }
-        }
-
-        @keyframes moveToCenter2 {
-            to { transform: translate(50vw, 50vh) translate(-50%, -50%); }
+              }
+        #message {
+            max-width: 80%;
         }
     </style>
 </head>
 <body>
-    <div id="text">Натисни, щоб змінити текст!</div>
-
-    <!-- Кошеня 1 -->
-    <div class="kitten kitten-1">
-        <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
-            <path d="M22.832,1.832c-0.752,0.748-1.768,1.172-2.832,1.172c-1.064,0-2.08-0.424-2.832-1.172C16.48,0.34,15.464,0,14.832,0
-                c-0.632,0-1.648,0.34-2.336,1.832c-0.752,0.748-1.768,1.172-2.832,1.172c-1.064,0-2.08-0.424-2.832-1.172C6.48,0.34,5.464,0,4.832,0
-                c-0.632,0-1.648,0.34-2.336,1.832C2.48,2.34,2.08,4.424,2.08,6.424c0,3.084,3.416,5.576,7.36,5.576c3.948,0,7.36-2.492,7.36-5.576
-                C16.8,4.424,16.4,2.34,15.168,1.832z M32.832,9.832c-2.232-0.748-5.832-0.5-6.832,0c-1.232,0.748-1.648,2.02-1.648,4.02
-                c0,2.084,1.568,4.576,4.832,4.576c3.26,0,4.832-2.492,4.832-4.576C33.968,12.424,33.064,10.424,32.832,9.832z"/>
-        </svg>
-    </div>
-
-    <!-- Кошеня 2 -->
-    <div class="kitten kitten-2">
-        <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
-            <path d="M22.832,1.832c-0.752,0.748-1.768,1.172-2.832,1.172c-1.064,0-2.08-0.424-2.832-1.172C16.48,0.34,15.464,0,14.832,0
-                c-0.632,0-1.648,0.34-2.336,1.832c-0.752,0.748-1.768,1.172-2.832,1.172c-1.064,0-2.08-0.424-2.832-1.172C6.48,0.34,5.464,0,4.832,0
-                c-0.632,0-1.648,0.34-2.336,1.832C2.48,2.34,2.08,4.424,2.08,6.424c0,3.084,3.416,5.576,7.36,5.576c3.948,0,7.36-2.492,7.36-5.576
-                C16.8,4.424,16.4,2.34,15.168,1.832z M32.832,9.832c-2.232-0.748-5.832-0.5-6.832,0c-1.232,0.748-1.648,2.02-1.648,4.02
-                c0,2.084,1.568,4.576,4.832,4.576c3.26,0,4.832-2.492,4.832-4.576C33.968,12.424,33.064,10.424,32.832,9.832z"/>
-        </svg>
-    </div>
-
-    <div class="heart">🤍</div>
+    <div id="message">Хєлоу) 🙃 натискай на єкран</div>
 
     <script>
-        const texts = [
-            "Хелоу котусик🐈‍⬛ Думаю ти здогадуєшся що це і як працює, але про всяк випадок напишу) Просто натискай на екран.Подумки обійняла 🤗",
+        const messages = [
+
+           "Хелоу котусик🐈‍⬛ Думаю ти здогадуєшся що це і як працює, але про всяк випадок напишу) Просто натискай на екран.Подумки обійняла 🤗",
             "Давай напевно почну з самого початку як я взагалі почала думати про те щоб зробити щось подібне тобі. То було не так давно , на день народження Тьоми.",
             "Ми з тобою розмовляли після того як ти побачив саме привітання,і обмолвився що ти такого не отримував. От тоді я і подумала а чому б і ні.",
             "Тільки на цей раз це не буде проект на швидку руку ,я захотіла зробити для тебе щось особливе) ",
@@ -192,39 +102,12 @@
             "Просто дякую тобі, що ти є, що ти справжній, і що терпиш мене , я це ціную, скучаю за тобою сонечко",
             "Сподіваюсь що скоро зможу сказати то все дивлячись на тебе) а поки дивись на кошенят які таки дійшли і зупинились один біля одного) Обнімаю,люблю, скучаю🤍🤗",
         ];
-            let currentIndex = 0;
-        const textElement = document.getElementById('text');
-        const heartElement = document.querySelector('.heart');
-        const kitten1 = document.querySelector('.kitten-1');
-        const kitten2 = document.querySelector('.kitten-2');
-
-        function typeText(text, callback) {
-            let i = 0;
-            textElement.textContent = '';
-            textElement.style.animation = 'none';
-            const interval = setInterval(() => {
-                if (i < text.length) {
-                    textElement.textContent += text[i];
-                    i++;
-                } else {
-                    clearInterval(interval);
-                    textElement.style.animation = 'blinkCursor 0.75s step-end infinite';
-                    if (callback) callback();
-                }
-            }, 100); // Швидкість друкування
-        }
-
-        textElement.addEventListener('click', function() {
-            currentIndex = (currentIndex + 1) % texts.length;
-            typeText(texts[currentIndex], function() {
-                if (currentIndex === texts.length - 1) {
-                    kitten1.style.animation = 'moveToCenter1 5s forwards';
-                    kitten2.style.animation = 'moveToCenter2 5s forwards';
-                    setTimeout(() => {
-                        heartElement.style.opacity = 1;
-                    }, 5000); // Показ серця після зближення кошенят
-                }
-            });
+              let index = 0;
+        document.body.addEventListener('click', function() {
+            if (index < messages.length) {
+                document.getElementById('message').innerText = messages[index];
+                index++;
+            }
         });
     </script>
 </body>
